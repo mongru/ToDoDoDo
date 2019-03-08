@@ -1,8 +1,10 @@
 {
   "name": "to-do-do-do",
+  "homepage" : "https://mongru.github.io/ToDoDoDo/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -12,6 +14,7 @@
   },
   "scripts": {
     "predeploy": "npm run build-css | npm run build",
+    "deploy": "gh-pages -d build",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "dev": "npm run watch-css | npm start",

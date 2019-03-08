@@ -1,21 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ToDoDoDo
 
-## Available Scripts
+[Preview](https://mongru.github.io/ToDoDoDo/)
 
-In the project directory, you can run:
+## Technologies used:
+- React 16 (boilerplate - create react app)
+- Redux
+- Scss (compiled to css with node-sass)
+- Jest/Enzyme for sample tests
 
-### `yarn start`
+### To run locally in dev mode:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`git clone https://github.com/mongru/ToDoDoDo.git`
+and
+`cd ToDoDoDo`
+then
+`yarn install` & `yarn start` & go to http://localhost:3000/
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Dev mode with custom css watch mode: 
+`yarn run dev`
+Runs the app in the development mode with scss to css watch and compile mode.
 
-### `yarn dev`
-
-Runs the app in the development mode with scss to css watch and build mode.
-
-### `yarn test`
-
+Test:
+`yarn test`
 Launches the test runner in the interactive watch mode.

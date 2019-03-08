@@ -1,0 +1,7 @@
+@import "../../styles/utility/variables";
+
+.title {
+  font-size: map-get($font-size, h1);
+  line-height: map-get($line-height, h1);
+  text-align: center;
+}

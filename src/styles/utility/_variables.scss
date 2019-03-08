@@ -1,0 +1,48 @@
+//Colours
+$primary: #021a52;
+
+$dark-blue: #082b60;
+
+$secondary: #1f95d4;
+
+$accent: #fdb92d;
+
+$lightgrey: #cecece;
+
+$darkgrey: #4d4e4f;
+
+$black: #000000;
+
+$error: #b22222;
+
+
+// Fonts
+$root-font-size: calc(1rem + ((1vw - 0.3rem) * 1.1111));
+$root-font-size-desktop: calc(1rem + ((1vw - 0.6rem) * 1.1111));
+// Where: * 1.1111 = 100 * font_Size_Difference / viewport_Width_Difference
+
+$root-font-size-max: 1.4rem;
+$line-height-base: 1.4;
+
+$font-size: (
+  h1: 2.625rem,
+  h2: 2.235rem,
+  h3: 1.903rem,
+  h4: 1.62rem,
+  h5: 1.379rem,
+  h6: 1.175rem,
+  base: 1rem,
+  small: 0.8rem
+);
+
+$line-height: (
+  h1: 2.625rem * $line-height-base,
+  h2: 2.235rem * $line-height-base,
+  h3: 1.903rem * $line-height-base,
+  h4: 1.62rem * $line-height-base,
+  h5: 1.379rem * $line-height-base,
+  h6: 1.175rem * $line-height-base,
+  base: 1rem * $line-height-base,
+  small: 0.75rem * $line-height-base
+);
+

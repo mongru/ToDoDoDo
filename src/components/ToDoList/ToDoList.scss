@@ -1,0 +1,35 @@
+@import "../../styles/utility/media-queries";
+@import "../../styles/utility/variables";
+
+.todo__text,
+.todo__icon {
+  padding: 10px;
+}
+
+.todo__icon {
+  cursor: pointer;
+}
+
+.todo__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2em;
+
+  li {
+    background-color: white;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    min-width: 80vw;
+    @include respond-to($desktop) {
+      min-width: 40vw !important;
+    }
+  }
+}
+
+.list__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

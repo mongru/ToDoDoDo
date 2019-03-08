@@ -1,0 +1,36 @@
+@import "./styles/utility/reset";
+@import "./styles/utility/variables";
+@import "./styles/utility/media-queries";
+@import "./styles/base/all";
+
+:root {
+  font-size: $root-font-size;
+
+  /* Prevent font from scaling beyond this breakpoint */
+  @include respond-to($desktop) {
+    font-size: $root-font-size-desktop;
+  }
+}
+
+body {
+  font-family: $main-font;
+  line-height: $line-height-base;
+  font-kerning: normal;
+  background-color: $secondary;
+  color: $primary;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vmax;
+  padding: 1em;
+  text-align: center;
+}

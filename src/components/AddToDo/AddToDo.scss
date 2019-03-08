@@ -1,0 +1,73 @@
+@import "../../styles/utility/variables";
+@import "../../styles/utility/media-queries";
+
+.btn {
+  padding: 10px;
+  letter-spacing: 1.2px;
+  background: $primary;
+  -webkit-box-shadow: 0px 20px 25px 0px rgba(32, 31, 54, 0.15);
+  box-shadow: 0px 20px 25px 0px rgba(32, 31, 54, 0.15);
+  text-transform: uppercase;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $accent;
+    color: $primary;
+  }
+
+  i {
+    margin-left: 6px;
+  }
+}
+
+.btn--delete {
+  background: $error;
+
+  &:hover {
+    background: darken($error, 0.9) !important;
+    color: white !important;
+  }
+}
+
+.todo__label {
+  margin-right: 0.4em;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.todo__input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  font-size: 1em;
+  line-height: 1.75;
+  margin-right: 1em;
+  min-width: 160px;
+  color: white;
+  @include respond-to($desktop) {
+    min-width: 400px;
+  }
+}
+
+.todo__input:focus {
+  outline-style: none;
+  border-bottom: 2px solid $accent;
+  transition: 0.3s linear;
+}
+
+.form__container {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 1em 0;
+  margin: 2em 0;
+  @include respond-to($desktop) {
+    justify-content: center;
+  }
+}

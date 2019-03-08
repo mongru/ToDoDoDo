@@ -15,3 +15,7 @@ You will also see any lint errors in the console.
 ### `yarn dev`
 
 Runs the app in the development mode with scss to css watch and build mode.
+
+### `yarn test`
+
+Launches the test runner in the interactive watch mode.
